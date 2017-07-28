@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="favicon.ico">
+    <title>Food Sense 따라하기</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+       
+        <header class="header-container clearfix">
+            <h1 id="logo">Food Sense</h1>
+            <ul id="menu">
+                <li><a href="#" class="btn_menu btn_tastemaker">Tastemaker</a></li>
+                <li><a href="#" class="btn_menu btn_blog">Blog</a></li>
+                <li><a href="#" class="btn_menu btn_alist">The A-List</a></li>
+                <li><a href="#" class="btn_menu btn_contribute">Contribute</a></li>
+                <li><a href="#" class="btn_menu btn_about">About</a></li>
+            </ul>
+            <h1 id="logo-mobile">Food Sense</h1>
+        </header>
+        <section class="body-container">
+            <div class="fs-slider-wrap">
+                <ul class="fs-slider">
+                    <li><img src="images/0140_foodsense.jpg" alt="" class="slide-img"></li>
+                    <li><img src="images/0219_foodsense.jpg" alt="" class="slide-img"></li>
+                    <li><img src="images/0052_foodsense.jpg" alt="" class="slide-img"></li>
+                    <li><img src="images/0232_foodsense.jpg" alt="" class="slide-img"></li>
+                </ul>
+                <div id="fs-pager">
+                    <a href="#" data-slide-index="0">Tastemaker</a>
+                    <a href="#" data-slide-index="1">Blog</a>
+                    <a href="#" data-slide-index="2">The A-list</a>
+                    <a href="#" data-slide-index="3">Contribute</a>
+                </div>
+            </div>
+            <div id="newsletter" class="clearfix">
+                <p class="desc">
+                    <i class="fa fa-envelope-o"></i> Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news, delivered weekly to your inbox.
+                </p>
+                <form id="form1">
+                    <input type="text" placeholder="email 주소를 넣으세요">
+                    <input type="submit" value="보내기">
+                </form>
+            </div>
+            <div class="row clearfix" id="recent">
+                <div class="col">
+                    <a href="#"><img src="images/SweetPotatoChips.jpg" alt=""><span class="title">How to Make Vegetable Chips</span></a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="images/cookbooks_blog.jpg" alt="">
+                        <span class="title">Best Summer Cookbooks  </span>
+                    </a>
+                </div>
+                
+                <div class="col"><a href="#"><img src="images/Pinterest_Page_featured.png" alt=""><span class="title">Join us on Pinterest!</span></a></div>
+                <div class="col"><a href="#"><img src="images/Adithi_Dinner_blog.jpg" alt=""><span class="title">Recipes from a Sunday Supper</span></a></div>
+            </div>
+        </section>
+        <footer class="footer-container">
+            <div class="footer-content-wrap">
+                <div class="footer-content">
+                    &copy;2017 Food Sense, all rights reserved.
+                    
+                    <span class="icons">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-rss"></i>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+    $(function(){
+       $('.fs-slider').bxSlider({
+           mode:'fade',
+           auto:true,
+           pagerCustom:'#fs-pager'
+       }); 
+        
+       $('#recent .col').matchHeight();
+    });
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,103 @@
+/* 초기화 */
+body,div,ul,li,h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
+img{border: 0 none;vertical-align: top;}
+ul{list-style: none;}
+a{text-decoration: none;}
+/*bxslider reset*/
+.bx-wrapper{position:relative;margin-bottom:0px;padding:0;-ms-touch-action:pan-y;touch-action:pan-y;-moz-box-shadow:0 0 0px #ccc;-webkit-box-shadow:0 0 0px #ccc;box-shadow:0 0 0px #ccc;border:0px solid #fff;background:transparent}
+/* 공통 요소 */
+.clearfix:after{display: block;clear: both;content: '';}
+
+/* 레이아웃 요소 */
+.wrap{margin: 0 auto;}
+.header-container{}
+.body-container{}
+.footer-container{clear: both;padding: 2em 0;}
+
+/* 로고 */
+#logo{text-indent: -9999px;width: 120px;height: 120px;background:url(../images/food-sense.png) 0 -60px no-repeat;background-size: 120px 180px;margin: 0 auto;}
+#logo-mobile{text-indent: -9999px;width: 120px;height: 120px;background:url(../images/food-sense.png) 0 -60px no-repeat;background-size: 120px 180px;margin: 0 auto;display: none;}
+/* 메뉴 */
+#menu{margin:0 auto;border-bottom: 1px solid #f2f2f2;}
+#menu:after{display: block;clear: both;content: '';}
+#menu li{float: left;}
+#menu li a{display: block;padding:1em 0.5em;font-size: 12px;color: #34AC98;font-weight: bold;}
+#menu li a:hover{color: #EC6635;}
+/* 사용자 정의 페이저*/
+#fs-pager:after {display: block;clear: both;content: '';}
+#fs-pager a{display: block;width: 25%;float: left;text-align: center;padding: 0.5em 0;background-color: #EFF8F7;color: #78BEBF;}
+#fs-pager a.active{background-color: #D9EFEC;color: #78BEBF;}
+#fs-pager a.active:hover{color: #78BEBF;}
+#fs-pager a:hover{color: #EF7D35;}
+#newsletter{padding: 1em;margin: 1em 0;border-top: 1px dashed #e5e5e5;border-bottom: 1px dashed #e5e5e5;}
+#newsletter .desc{margin-bottom: 1em;}
+/* recent */
+#recent{padding: 5px;margin:15px 0 ;}
+#recent .col{float: left;width: 25%;}
+#recent .col a{display: block;margin: 0 5px;}
+#recent .col img{width: 100%;border: 1px solid #999;padding: 9px;box-sizing: border-box;background-color: #fff;}
+#recent .title{display: block;}
+/* footer icons */
+.footer-container .icons{float: right;margin-right: 50px;font-size: 20px;}
+
+
+
+/* phone portrait */
+@media screen and (max-width:414px) {
+    #logo-mobile{display: block;}
+    #logo{display: none;}
+    #recent .col{width: 100%;}
+    #fs-pager{display: none;}
+    #menu{width: 320px;}
+}
+@media screen and (min-width:380px) and (max-width:414px) {
+    
+    
+}
+/* phone landscape */
+@media screen and (min-width:415px) and (max-width:767px){
+    #menu{float: right;border-bottom-width: 0;margin-top: 50px;}
+    #logo{float: left;}
+    #recent .col{width: 50%;}
+    #fs-pager{display: none;}
+    #menu{width: 275px;}
+    #menu a{letter-spacing:-1px}
+}
+
+/* tablet portrait */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .wrap{width: 700px;}
+    .header-container{margin: 1em 0;}
+    #menu{width: 450px;float: right;border-bottom-width: 0;margin-top: 35px;}
+    #logo{float: left;}
+    #menu li a{padding-top: 40px;background-position: center 0;background-repeat: no-repeat;font-size: 16px;margin:0 2px;transition:background-position 0.3s}
+    #menu li a:hover{background-position: center 5px;}
+    #menu a.btn_tastemaker{background-image: url(../images/nav-tastemakers.png);}
+    #menu a.btn_blog{background-image: url(../images/nav-blog.png);}
+    #menu a.btn_contribute{background-image: url(../images/nav-contribute.png);}
+    #menu a.btn_alist{background-image: url(../images/nav-alist.png);}
+    #menu a.btn_about{background-image: url(../images/nav-about.png);}
+}
+/* tablet landscape or pc */
+@media screen and (min-width:1024px){
+   .wrap{width: 1024px;margin-top: 30px;}
+   .header-container{float: left;width: 160px;margin-right: 14px;}
+   .body-container{float: right;width: 850px;}
+    #menu{float: none;}
+    #menu li{float: none;}
+    .desc{width: 500px;float: left;}
+    #form1{float: right;}
+    #newsletter .desc{margin-bottom: 0;}
+    
+    #menu a{background-position: 0 center;background-repeat: no-repeat;text-indent: 40px;transition:background-position 0.3s}
+    #menu a:hover{background-position: 8px center;}
+    #menu a.btn_alist{background-image: url(../images/nav-alist.png);}
+    #menu a.btn_contribute{background-image: url(../images/nav-contribute.png);}
+    #menu a.btn_about{background-image: url(../images/nav-about.png);}
+    #menu a.btn_blog{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdFJREFUeNpi/P//PwMIMDIygqgoILYHYgMgZgZiLSDmZEAF14D4OxL/IxDfQVNzE4i/QNmKQMwGxH1A/BRZEdhuEAFzBBCcBIlTgN8C8Rkg/oZF7gMQW6I7gAnN5b8YKAM7gNgEiFdikeMH4mnQkIUDajuADUq/wyEPilozfA74TqEDOAk4AASM8TngLwN1wEc8ctL4HPCFQov5ofRrPGok8DmAgQ4hIErLEOAhwhweWqYBZiJCgIceuYDsEKBWOfCdCEfSJArYKA2BL3SIAmZaZkNmItITGz4HfKRSNsTnAJqmAZKjk9ppALk4/k5MSFG7HCA2SzPTqhxAjuOP5ETBRyo4gI2U0KRFCJBkFi3TwEdyEuHHgU6E1HCAASmhyUIDB2wkRTELjrh7Cm3bS5Ng1lksYveh7cMLQDwfiBMwVKD1jEDgIRDvRa82KQDqQNwCxH+Qekn8MLtZcJThTkD8Gcq/gFZHCEELm6cELNZFq/nuQ/uJv5CLfGwO+A7tWESgdTDk0Fu0eMBlpFwAioJHQBwCxKuB+Diyh7A54CA0JWfiaN8/ItDuh/leHS0aDaChlkUoEbZCg5gZSSMzWtfKmIQ0cBMa/MuAeC56jQsQYADQtJAKRztjkwAAAABJRU5ErkJggg==);}
+    #menu a.btn_tastemaker{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3pJREFUeNrsV19kW1EcvksIoYRLGZkSShijdEKfRhmbPswoo4xOCZ095ak19jTKpg8zNmYzFt3LZjNCa9PpdDat0kmVxWLTWixWrcYi0VhkvzPfqV8+56Z9GHvp4WvuPefc3/nO738972h4Xq9gWnDqH8qMCDKCRUFN0BJ8FzwWJHjzM2z4KYgfQni/4INgVnA8YM9dyNwQ3BKkBROCJcEvwZjebJi9wsKLQxB4IsgLpgL2G1K/IbfHsT4OcvskdsFwULAnGD2AQE4wIwjjkCStp3HAON7PCW4Kukjr2wLfEpjGQgaaSB6ggRk8T0G1ejyEBozwIZDJg7Adg5ZkSP5U1IF3BGvqhq6xJYjh+Y2gj9aNk30S7AhGBE3BBfza8RG/KUOgKujGhNk0CUe7HkCgrJ6XHV5tbr6poqFJ35hRt+eGsNitFt8J3oOAKzQrEOxBSIzWm0p7y9hrzHQWTpuAPxiUPMRmjYSkYMdFB4ERmv/qcNINkPDx3ALmMT+K90seHNC8RANieZjmh4hAnjx8At9dxnsMITesHLCGvBO1nt9yJKEusF+g+TMOAjohGXN+hgbvkYniiLIatOyF4K2ew5bGvnNI1WxjV+rVUXJakEUuWFLaHcPFHsE//hIoBRBIQY3PHcT0aASQv4KDTIgPqCxpRsFuDIExE+iHwywjLDtpYKdD0srSwU0VSfsEyg4CfTj8PGK206iTE3LSslrS2utiDTSJQBWmqQccyOr2AwiE6XJWW1FNoAkSPjEP6g8a9F5CAUp2IOuTRuKagBXik9CTHeoB29nsXxWsEPEKaWCTfGKfAKfjMkKL8/wAqt2WmjPF66rghKCoKqsmYGV/o/e2Evqa5mrI33YkccuLHTQTdTQiNVW+I0h6qy4TxB1FRzumSSJPBS8pFMNoz9ZhxiyaEFeeaHDUaAK9dLMGZbikIjWL7qkfvpJANBjtvMV8UN5okxtSzhEhLcQoyVTBPANHm0SrlUIjMwmSW1QbdMkOs9wQpUbLvAcbi0pQAbc1eCC4j8J0DWtrShv1gLC1xIouB/qBHs/2el8cEbCLFD2IuUWqpNuYS6vvVmEy27Du2UrI4wY8dp66Wj3W0YBEVXOyQKU5R71FDiV4BYe3tXrHqKSmYV+jotsOAik4YoF8peJ41v1DUvna3NE/o20maLVa/5XAHwEGAGa4/S+fyfTEAAAAAElFTkSuQmCC);}
+}
+
+
+
+
